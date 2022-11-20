@@ -1,11 +1,12 @@
 import React from "react";
-import Intro from "../components/intro";
+import Intro_History from "../components/intro_history";
 import MainLayout from "../layouts/MainLayout";
+
 const introduction = () => {
   return (
     <div>
-      <MainLayout></MainLayout>
-      <Intro />
+      <MainLayout pcolor={"#ff0000"} />
+      <Intro_History />
     </div>
   );
 };

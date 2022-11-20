@@ -4,12 +4,13 @@ import type { Container, Engine } from "tsparticles-engine";
 import particlesOptions from "./particlesOptions";
 import { loadFull } from "tsparticles";
 
-// interface Props {
-//   children: React.ReactNode;
-// }
+interface Props {
+  children: React.ReactNode;
+  pcolor: "#fff";
+}
 
-// const MainLayout = ({ children }: Props) => {
-const MainLayout = () => {
+const MainLayout = ({ pcolor }: any) => {
+  // const MainLayout = () => {
   const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
@@ -49,8 +50,6 @@ const MainLayout = () => {
           fpsLimit: 120,
           interactivity: {
             detectsOn: "window",
-            // detectsOn: "canvas",
-            // detectsOn: "parent",
             events: {
               onClick: {
                 enable: false,
@@ -71,7 +70,7 @@ const MainLayout = () => {
                   smooth: 10,
                 },
               },
-              resize: false,
+              resize: true,
             },
             modes: {
               attract: {
@@ -192,7 +191,7 @@ const MainLayout = () => {
                 },
                 shadow: {
                   color: {
-                    value: "#000000",
+                    value: "",
                   },
                   length: 2000,
                 },
@@ -249,15 +248,17 @@ const MainLayout = () => {
               },
             },
             color: {
-              value: "#fff",
+              //   value: "#ff0000",
+              //   value: "#ffffff",
+              value: pcolor,
               animation: {
                 h: {
                   count: 0,
                   enable: true,
                   offset: 0,
-                  speed: 50,
+                  speed: 1,
                   decay: 0,
-                  sync: false,
+                  sync: true,
                 },
                 s: {
                   count: 0,
@@ -351,8 +352,8 @@ const MainLayout = () => {
                 area: 800,
                 factor: 1000,
               },
-              limit: 200,
-              value: 150,
+              limit: 0,
+              value: 100,
             },
             opacity: {
               random: {
@@ -556,7 +557,7 @@ const MainLayout = () => {
                 value: "random",
               },
               consent: false,
-              distance: 0,
+              distance: null,
               enable: true,
               frequency: 1,
               opacity: 1,
