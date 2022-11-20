@@ -2,7 +2,7 @@ import React from "react";
 
 const intro = () => {
   return (
-    <div className="!z-50 flex flex-row h-screen w-screen justify-center gap-x-10">
+    <div className="flex flex-row h-screen w-screen justify-center gap-x-10">
       <div className="flex flex-col justify-center font-sans h-screen w-screen content-center pl-40">
         <div className="pt-0 text-7xl text-white ">Introduction</div>
         <div className="pt-0 text-2xl bg-clip-text text-white">

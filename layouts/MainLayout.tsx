@@ -15,7 +15,7 @@ const MainLayout = () => {
   };
 
   return (
-    <div className="!-z--10">
+    <div className="">
       <Particles
         init={particlesInit}
         options={{
