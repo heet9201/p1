@@ -11,11 +11,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
 * {
+  color: white;
   box-sizing: border-box;
 }
 

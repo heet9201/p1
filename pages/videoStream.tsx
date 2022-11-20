@@ -19,7 +19,7 @@ const videoStream = () => {
           along with Netflix and YouTube up ahead.
         </div>
         <br />
-        <div className="text-xl">
+        <div className="text-xl text-white">
           The following graph shows the frequency of terms appearing in the
           documents from 1995-2019. I have kept 3 services - Blockbuster,
           Netflix and YouTube as my keywords. We can see from the graph that as
